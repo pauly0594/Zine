@@ -1,0 +1,113 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background: transparent;
+  padding: 0 1em;
+}
+
+#menu, .sub-menu {
+  display: none;
+  list-style: none;
+  font-family: Helvetica Neue;
+  font-style: light;
+  color: white;
+  font-size: 1.5em, .5em;
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+/*Change toggle size by adjusting width & height*/
+.tb-menu-toggle {
+  border: 0;
+  position: relative;
+  background: black;
+  cursor: pointer;
+
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  -webkit-transition:all .2s;
+   -moz-transition:all .2s;
+     -o-transition:all .2s;
+        transition:all .2s;
+}
+.tb-menu-toggle i:nth-child(2) {
+  top: 40%;
+}
+.tb-menu-toggle i:nth-child(3) {
+  top: 80%;
+}
+
+/* Style the active toggle here */
+.tb-menu-toggle.tb-active-toggle i { }
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2){ 
+  top: 40%;
+  -webkit-transform:rotate(45deg);
+   -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+     -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+} 
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3){ 
+  top: 40%;
+  -webkit-transform:rotate(-45deg);
+   -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+     -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+}
+
+body {
+  background: white;
+  font-family: Helvetica Neue;
+  font-style: light;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 5px;
+  text-align: bottom;
+}
+
+.section {
+  text-transform: uppercase;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: black;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+      text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+      text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+      text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: grey;
+      text-decoration: none;
+}

@@ -82,11 +82,11 @@ body {
 
 img {
   text-transform: uppercase;
-  background-size: 100% ;
-  background-size-height:auto;
+  width: 100% ;
+  /*background-size-height:auto;
   background-repeat: no-repeat;
   background-position: top right;
-  background-color: black;
+  background-color: black;*/
 }
 
 /* unvisited link */

@@ -71,7 +71,7 @@
 }
 
 body {
-  background: white;
+  background: black;
   font-family: Helvetica Neue;
   font-style: light;
   color: white;
@@ -80,14 +80,30 @@ body {
   text-align: bottom;
 }
 
+.space {
+  margin-top: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background: transparent;
+  padding: 0 1em;
+
+}
+
 img {
   text-transform: uppercase;
-  width: 100% ;
+   width: 75% ;
+
   /*background-size-height:auto;
   background-repeat: no-repeat;
   background-position: top right;
   background-color: black;*/
+
 }
+
+
 
 /* unvisited link */
 a:link {

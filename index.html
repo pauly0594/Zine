@@ -7,7 +7,6 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css'>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,26 +44,26 @@
 </header>
 
 <div id="fullpage">  
-  <p class="space">PG01</p><p><img src="images/XD_Zine_LayoutBuild_PG01_Cover.png"></p>
-  <p>PG02<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG02_FullImage.png"></p>
-  <p>PG03<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG03_Overview.png"></p>
-  <p>PG04<img src="images/XD_Zine_LayoutBuild_PG04_InsiderOverview.png" data-src="images/XD_Zine_LayoutBuild_PG04_InsiderOverview.png"></p>
-  <p>PG05 <img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG05_Interview01_Pg01.png"></p>
-  <p>PG06 <img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG06_Interview01_Pg02.png"></p>
-  <p>PG07<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG07_Interview01_Pg03.png"></p>
-  <p>PG08<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG08_Interview01_Pg04.png"></p>
-  <p>PG09<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG09_Interview01_Pg05.png"></p>
-  <p>PG10<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG10_Interview02_Pg01.png"></p>
-  <p>PG11<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG11_Interview02_Pg02.png"></p>
-  <p>PG12<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG12_Interview02_Pg03.png"></p>
-  <p>PG13<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG13_Interview02_Pg04.png"></p>
-  <p>PG14<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG14_Interview02_Pg05.png"></p>
-  <p>PG15<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG16_Interview03_Pg01.png"></p>
-  <p>PG16<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG17_Interview03_Pg02.png"></p>
-  <p>PG17<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG18_Interview03_Pg03.png"></p>
-  <div>PG18<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG19_Interview03_Pg04.png"></p>
-  <p>PG19<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG20_Interview03_Pg05.png"></p>
-  <p>PG20<img src="http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif" data-src="images/XD_Zine_LayoutBuild_PG21_Interview03_Pg06.png"></p>
+  <p class="space">PG01</p><p><img id="COVER"class="lazy"  src="images/XD_Zine_LayoutBuild_PG01_Cover.png"></p>
+  <p>PG02<img class="lazy" src="images/XD_Zine_LayoutBuild_PG02_FullImage.png"></p>
+  <p>PG03<img id="PG04" class="lazy" src="images/XD_Zine_LayoutBuild_PG03_Overview.png"></p>
+  <p>PG04<img class="lazy" src="images/XD_Zine_LayoutBuild_PG04_InsiderOverview.png"></p>
+  <p>PG05 <img class="lazy" src="images/XD_Zine_LayoutBuild_PG05_Interview01_Pg01.png"></p>
+  <p>PG06 <img class="lazy" src="images/XD_Zine_LayoutBuild_PG06_Interview01_Pg02.png"></p>
+  <p>PG07<img class="lazy" src="images/XD_Zine_LayoutBuild_PG07_Interview01_Pg03.png"></p>
+  <p>PG08<img class="lazy" src="images/XD_Zine_LayoutBuild_PG08_Interview01_Pg04.png"></p>
+  <p>PG09<img id="#PG09"class="lazy"src="images/XD_Zine_LayoutBuild_PG09_Interview01_Pg05.png"></p>
+  <p>PG10<img class="lazy" src="images/XD_Zine_LayoutBuild_PG10_Interview02_Pg01.png"></p>
+  <p>PG11<img class="lazy" src="images/XD_Zine_LayoutBuild_PG11_Interview02_Pg02.png"></p>
+  <p>PG12<img class="lazy" src="images/XD_Zine_LayoutBuild_PG12_Interview02_Pg03.png"></p>
+  <p>PG13<img class="lazy" src="images/XD_Zine_LayoutBuild_PG13_Interview02_Pg04.png"></p>
+  <p>PG14<img id="#PG14" class="lazy" src="images/XD_Zine_LayoutBuild_PG14_Interview02_Pg05.png"></p>
+  <p>PG15<img  class="lazy" src="images/XD_Zine_LayoutBuild_PG16_Interview03_Pg01.png"></p>
+  <p>PG16<img class="lazy" src="images/XD_Zine_LayoutBuild_PG17_Interview03_Pg02.png"></p>
+  <p>PG17<img class="lazy" src="images/XD_Zine_LayoutBuild_PG18_Interview03_Pg03.png"></p>
+  <div>PG18<img class="lazy" src="images/XD_Zine_LayoutBuild_PG19_Interview03_Pg04.png"></p>
+  <p>PG19<img class="lazy" src="images/XD_Zine_LayoutBuild_PG20_Interview03_Pg05.png"></p>
+  <p>PG20<img class="lazy" src="images/XD_Zine_LayoutBuild_PG21_Interview03_Pg06.png"></p>
   <!-- <div class="section" style="background-image: url(images/XD_Zine_LayoutBuild_PG22_Interview03_Pg07.png)">PG21</div>
   <div class="section" style="background-image: url(images/XD_Zine_LayoutBuild_PG23_Interview03_Pg08.png)">PG22</div>
   <div class="section" style="background-image: url(images/XD_Zine_LayoutBuild_PG24_Interview04_Pg01.png)">PG23</div>
@@ -143,17 +142,18 @@
   <div class="section" style="background-image: url(images/XD_Zine_LayoutBuild_Resources_PG_94_Studios_Pg03.png)">PG96</div>
  -->
 
-<script type="text/javascript">
-$(function(){
-  $("img").unveil(200);
-});
-</script>
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <!-- <script src='https://jquery.mobile.custom.min.jscdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
  --><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js'></script>
 <script src="js/index.js"></script>
+
+
+<script type="text/javascript">
+$("img.lazy").lazyload();
+
+</script>
 
 </body>
 </html>
